@@ -45,8 +45,8 @@ public class FizzBuzzGameTest {
     }
 
     @Test
-    public void should_return_FizzBuzz_when_have_3_and_5_and_7_multiplier_like_35() {
+    public void should_return_Fizz_when_have_3_and_5_and_7_multiplier_like_35() {
         String word = game.parseNumberToWord(35);
-        assertEquals("FizzBuzzWhizz", word);
+        assertEquals("Fizz", word);
     }
 }
