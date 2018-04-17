@@ -43,4 +43,10 @@ public class FizzBuzzGameTest {
         String word = game.parseNumberToWord(15);
         assertEquals("FizzBuzz", word);
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_have_3_and_5_and_7_multiplier_like_35() {
+        String word = game.parseNumberToWord(35);
+        assertEquals("FizzBuzzWhizz", word);
+    }
 }

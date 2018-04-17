@@ -16,15 +16,15 @@ public class FizzBuzzGame {
             special = false;
             personalResult.setLength(0);
 
-            if (i % 3 == 0) {
+            if (i % 3 == 0 || i % 10 == 3 || i / 10 == 3) {
                 special = true;
                 personalResult.append("Fizz");
             }
-            if (i % 5 == 0) {
+            if (i % 5 == 0 || i % 10 == 5 || i / 10 == 5) {
                 special = true;
                 personalResult.append("Buzz");
             }
-            if (i % 7 == 0) {
+            if (i % 7 == 0 || i % 10 == 7 || i / 10 == 7) {
                 special = true;
                 personalResult.append("Whizz");
             }
