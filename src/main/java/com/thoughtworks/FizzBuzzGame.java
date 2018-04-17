@@ -25,16 +25,15 @@ public class FizzBuzzGame {
                     special = true;
                     personalResult.append("Fizz");
                 }
-                if (i % 5 == 0 || i % 10 == 5 || i / 10 == 5) {
+                if (i % 5 == 0) {
                     special = true;
                     personalResult.append("Buzz");
                 }
-                if (i % 7 == 0 || i % 10 == 7 || i / 10 == 7) {
+                if (i % 7 == 0) {
                     special = true;
                     personalResult.append("Whizz");
                 }
             }
-
 
             if (!special)
                 personalResult.append(Integer.toString(i));
@@ -49,6 +48,11 @@ public class FizzBuzzGame {
 
     public String parseNumberToWord(int i) {
         return results.get(i-1);
+    }
+
+    public void testPrint() {
+        for (int i = 0; i < results.size(); i++)
+            System.out.println(i+1 + "\t" + results.get(i));
     }
 }
 

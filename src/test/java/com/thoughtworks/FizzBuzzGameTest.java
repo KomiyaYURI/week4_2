@@ -49,4 +49,5 @@ public class FizzBuzzGameTest {
         String word = game.parseNumberToWord(35);
         assertEquals("Fizz", word);
     }
+
 }
